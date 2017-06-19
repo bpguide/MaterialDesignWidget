@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wpp.study.RecyclerViewActivity"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <Button
+        android:id="@+id/side"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="侧滑"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#fff"
+        style="@style/rippleButton"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/recyclerview_bt"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="RecyclerView"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
