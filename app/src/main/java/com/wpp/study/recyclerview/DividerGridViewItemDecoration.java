@@ -1,4 +1,4 @@
-package com.wpp.study;
+package com.wpp.study.recyclerview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.support.v7.widget.RecyclerView.LayoutManager;
 import android.support.v7.widget.RecyclerView.State;
 import android.util.Log;
 import android.view.View;
+
+import com.wpp.study.R;
 
 public class DividerGridViewItemDecoration extends ItemDecoration {
 

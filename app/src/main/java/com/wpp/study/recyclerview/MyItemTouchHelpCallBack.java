@@ -1,4 +1,4 @@
-package com.wpp.study;
+package com.wpp.study.recyclerview;
 
 import android.graphics.Canvas;
 import android.graphics.Color;

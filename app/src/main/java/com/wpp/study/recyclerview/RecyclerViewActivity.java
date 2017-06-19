@@ -1,4 +1,4 @@
-package com.wpp.study;
+package com.wpp.study.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.widget.Toast;
+
+import com.wpp.study.R;
 
 import java.util.ArrayList;
 

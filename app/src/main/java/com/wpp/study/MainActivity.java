@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
+import com.wpp.study.recyclerview.RecyclerViewActivity;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
