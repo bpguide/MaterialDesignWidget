@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.wpp.study.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 
 /**
@@ -19,12 +18,12 @@ import java.util.Collections;
  * @description
  * @date 2017/5/22
  */
-public class MySimpleAdapter extends RecyclerView.Adapter implements MyItemTouchHelpCallBack.IItemTouchMovedListener {
+public class MyLinearAdapter extends RecyclerView.Adapter  {
     private Context context;
     private LayoutInflater mLayoutInflater;
     private ArrayList<String> mData;
     private IOnClickListener mDragListener;
-    public MySimpleAdapter(Context context, ArrayList<String> data, IOnClickListener dragListener){
+    public MyLinearAdapter(Context context, ArrayList<String> data, IOnClickListener dragListener){
         mLayoutInflater = LayoutInflater.from(context);
         this.mData = data;
         this.mDragListener = dragListener;
@@ -45,19 +44,6 @@ public class MySimpleAdapter extends RecyclerView.Adapter implements MyItemTouch
         return mData == null ? 0 : mData.size();
     }
 
-    @Override
-    public boolean onItemMoved(int from, int to) {
-        Collections.swap(mData, from, to);
-        notifyItemMoved(from, to);
-        return true;
-    }
-
-    @Override
-    public boolean onItemDeleted(int position) {
-        mData.remove(position);
-        notifyItemRemoved(position);
-        return true;
-    }
     class BodyViewHolder extends RecyclerView.ViewHolder{
 
         TextView tv_Msg;

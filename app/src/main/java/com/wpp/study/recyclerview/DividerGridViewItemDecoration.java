@@ -42,7 +42,7 @@ public class DividerGridViewItemDecoration extends ItemDecoration {
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
                     .getLayoutParams();
             final int top = child.getTop() - params.topMargin;
-            final int bottom = child.getBottom() + params.bottomMargin;
+            final int bottom = child.getBottom() + params.bottomMargin + mDivider.getIntrinsicHeight();
             final int left = child.getRight() + params.rightMargin;
             final int right = left + mDivider.getIntrinsicWidth();
 
@@ -97,7 +97,6 @@ public class DividerGridViewItemDecoration extends ItemDecoration {
      * @return
      */
     private boolean isLastRow(int itemPosition, RecyclerView parent) {
-        Log.e("wpp", "isLastRow");
         int spanCount = getSpanCount(parent);
         LayoutManager layoutManager = parent.getLayoutManager();
         //有多少列
@@ -108,7 +107,7 @@ public class DividerGridViewItemDecoration extends ItemDecoration {
             if(lastRowCount != 0){
                 rowCount += 1;
             }
-            if(itemPosition >= ((rowCount - 1) * spanCount) && itemPosition < childCount){
+            if(itemPosition >= ((rowCount - 1) * spanCount)){
                 return true;
             }
         }

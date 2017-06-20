@@ -59,9 +59,9 @@ public class MyItemTouchHelpCallBack extends ItemTouchHelper.Callback {
     }
 
 /*    @Override
-    public void onChildDrawOver(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+    public void onChildDrawOver(Canvas c, RecyclerView mLinearLayoutRecyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
         Log.d(TAG, "onChildDrawOver");
-        super.onChildDrawOver(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
+        super.onChildDrawOver(c, mLinearLayoutRecyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
     }*/
 
     @Override

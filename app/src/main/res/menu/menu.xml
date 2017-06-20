@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.actionbartest.MainActivity" >
+
+    <item
+        android:id="@+id/action_vertical"
+        app:showAsAction="never"
+        android:title="Vertical"/>
+    <item
+        android:id="@+id/action_horizontal"
+        app:showAsAction="never"
+        android:title="Horizontal"/>
+    <item
+        android:id="@+id/action_grid"
+        app:showAsAction="never"
+        android:title="grid"/>
+    <item
+        android:id="@+id/action_slide_drag"
+        app:showAsAction="never"
+        android:title="SlideAndDrag"/>
+
+</menu>
