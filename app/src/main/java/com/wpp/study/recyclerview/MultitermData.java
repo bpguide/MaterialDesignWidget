@@ -6,10 +6,10 @@ package com.wpp.study.recyclerview;
  * @description
  * @date 2017/6/11
  */
-public class MyData {
+public class MultitermData {
     public int viewType;
     public ItemData mData;
-    public class ItemData{
+    public static class ItemData{
         public String title;
         public String []images;
     }

@@ -19,14 +19,14 @@ import java.util.ArrayList;
  * @description
  * @date 2017/6/11
  */
-public class MultiItemTypeAdapter extends RecyclerView.Adapter {
+public class MultitermTypeAdapter extends RecyclerView.Adapter {
 
-    private ArrayList<MyData> mDatas;
+    private ArrayList<MultitermData> mDatas;
     private LayoutInflater mLayoutInflater;
     private Context mContext;
     public static final int ITEM1 = 1;
     public static final int ITEM2 = 2;
-    public MultiItemTypeAdapter(Context context, ArrayList<MyData> datas){
+    public MultitermTypeAdapter(Context context, ArrayList<MultitermData> datas){
         mLayoutInflater = LayoutInflater.from(context);
         this.mDatas = datas;
         this.mContext = context;
@@ -73,8 +73,8 @@ public class MultiItemTypeAdapter extends RecyclerView.Adapter {
         public Item_One(View itemView) {
             super(itemView);
             imageView1 = (ImageView) itemView.findViewById(R.id.imageview1);
-            imageView2 = (ImageView) itemView.findViewById(R.id.imageview1);
-            imageView3 = (ImageView) itemView.findViewById(R.id.imageview1);
+            imageView2 = (ImageView) itemView.findViewById(R.id.imageview2);
+            imageView3 = (ImageView) itemView.findViewById(R.id.imageview3);
             title = (TextView) itemView.findViewById(R.id.title);
 
         }

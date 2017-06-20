@@ -30,11 +30,17 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     Unbinder bind;
     private ItemTouchHelper mHelper;
+
     private GridLayoutManager mGridLayoutManager;
     private LinearLayoutManager mLinearLayoutManager;
+
     private ArrayList<String> mData;
+    private ArrayList<MultitermData> mMultitermData;
+
     private MyLinearAdapter mLinearLayoutRecycylerAdapter;
     private MyGridAdapter mGridLayoutRecyclerAdapter;
+    private MultitermTypeAdapter mMultitermAdapter;
+
     private DividerLinearViewItemDecoration mLinearLayoutItemDecoration;
     private DividerGridViewItemDecoration mGridLayoutItemDecoration;
     private int currentPage = 0;
@@ -56,6 +62,55 @@ public class RecyclerViewActivity extends AppCompatActivity {
         for (int i = 0; i < 50; i++){
             mData.add("item"+i);
         }
+        mMultitermData = new ArrayList<>();
+        MultitermData data = new MultitermData();
+        data.viewType = MultitermTypeAdapter.ITEM1;
+        MultitermData.ItemData item = new MultitermData.ItemData();
+        item.title = "自然风光";
+        item.images = new String[3];
+        item.images[0] = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497955274590&di=19cec4d3efcc1565cf8d97f981b4f57c&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F11%2F34%2F46%2F78b1OOOPIC4e.jpg";
+        item.images[1] = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497955403399&di=1522f62ccf24cdfe1c1c68add1250ab9&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F12%2F81%2F81%2F09s58PICtFx.jpg";
+        item.images[2] = "http://img.ivsky.com/img/tupian/pre/201704/29/tianye_jingse-006.jpg";
+        data.mData = item;
+        mMultitermData.add(data);
+
+        data = new MultitermData();
+        data.viewType = MultitermTypeAdapter.ITEM2;
+        item = new MultitermData.ItemData();
+        item.title = "星空景色";
+        item.images = new String[1];
+        item.images[0] = "http://img.ivsky.com/img/tupian/pre/201704/23/xingkong-007.jpg";
+        data.mData = item;
+        mMultitermData.add(data);
+
+        data = new MultitermData();
+        data.viewType = MultitermTypeAdapter.ITEM2;
+        item = new MultitermData.ItemData();
+        item.title = "星空景色";
+        item.images = new String[1];
+        item.images[0] = "http://img.ivsky.com/img/tupian/pre/201704/23/xingkong-001.jpg";
+        data.mData = item;
+        mMultitermData.add(data);
+
+        data = new MultitermData();
+        data.viewType = MultitermTypeAdapter.ITEM1;
+        item = new MultitermData.ItemData();
+        item.title = "自然风光";
+        item.images = new String[3];
+        item.images[0] = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497955274590&di=19cec4d3efcc1565cf8d97f981b4f57c&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F11%2F34%2F46%2F78b1OOOPIC4e.jpg";
+        item.images[2] = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497955403399&di=1522f62ccf24cdfe1c1c68add1250ab9&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F12%2F81%2F81%2F09s58PICtFx.jpg";
+        item.images[1] = "http://img.ivsky.com/img/tupian/pre/201704/29/tianye_jingse-006.jpg";
+        data.mData = item;
+        mMultitermData.add(data);
+
+        data = new MultitermData();
+        data.viewType = MultitermTypeAdapter.ITEM2;
+        item = new MultitermData.ItemData();
+        item.title = "星空景色";
+        item.images = new String[1];
+        item.images[0] = "http://img.ivsky.com/img/tupian/pre/201704/23/xingkong-001.jpg";
+        data.mData = item;
+        mMultitermData.add(data);
     }
 
     private void initView() {
@@ -84,6 +139,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mHelper = new ItemTouchHelper(new MyItemTouchHelpCallBack(mGridLayoutRecyclerAdapter));
         mGridLayoutRecyclerView.setAdapter(mGridLayoutRecyclerAdapter);
         mGridLayoutRecyclerView.setVisibility(View.GONE);
+
+        mMultitermAdapter = new MultitermTypeAdapter(this, mMultitermData);
     }
 
     @Override
@@ -103,7 +160,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     mGridLayoutRecyclerView.setVisibility(View.GONE);
 
                     mLinearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置垂直方向LayoutManager
-                    mLinearLayoutRecyclerView.setLayoutManager(mLinearLayoutManager);
+
+                    mLinearLayoutRecyclerView.setAdapter(mLinearLayoutRecycylerAdapter);
 
                     mLinearLayoutItemDecoration.setOrientation(LinearLayoutManager.VERTICAL);//设置垂直方向分割线
                 }
@@ -116,7 +174,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     mGridLayoutRecyclerView.setVisibility(View.GONE);
 
                     mLinearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);//设置水平方向LayoutManager
-                    mLinearLayoutRecyclerView.setLayoutManager(mLinearLayoutManager);
+
+                    mLinearLayoutRecyclerView.setAdapter(mLinearLayoutRecycylerAdapter);
 
                     mLinearLayoutItemDecoration.setOrientation(LinearLayoutManager.HORIZONTAL);//设置水平方向分割线
                 }
@@ -129,6 +188,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
                     mGridLayoutRecyclerView.setLayoutManager(mGridLayoutManager);
                     mGridLayoutRecyclerView.addItemDecoration(mGridLayoutItemDecoration);
+
                     mHelper.attachToRecyclerView(null);
                 }
                 break;
@@ -140,6 +200,19 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     mGridLayoutRecyclerView.setLayoutManager(new LinearLayoutManager(this));
                     mGridLayoutRecyclerView.removeItemDecoration(mGridLayoutItemDecoration);
                     mHelper.attachToRecyclerView(mGridLayoutRecyclerView);//设TouchHelper
+                }
+                break;
+            case R.id.action_multite_type:
+                if(currentPage != 4){
+                    currentPage = 4;
+                    mLinearLayoutRecyclerView.setVisibility(View.VISIBLE);
+                    mGridLayoutRecyclerView.setVisibility(View.GONE);
+
+                    mLinearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置垂直方向LayoutManager
+
+                    mLinearLayoutRecyclerView.setAdapter(mMultitermAdapter);
+
+                    mLinearLayoutItemDecoration.setOrientation(LinearLayoutManager.VERTICAL);//设置垂直方向分割线
                 }
                 break;
         }

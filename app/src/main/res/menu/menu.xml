@@ -20,5 +20,9 @@
         android:id="@+id/action_slide_drag"
         app:showAsAction="never"
         android:title="SlideAndDrag"/>
+    <item
+        android:id="@+id/action_multite_type"
+        app:showAsAction="never"
+        android:title="MultiteType"/>
 
 </menu>
