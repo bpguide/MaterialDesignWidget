@@ -19,27 +19,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容1" />
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="今日头条" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容2" />
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="热点新闻" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容3" />
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="本地新闻" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="内容4" />
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
@@ -51,17 +56,13 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@mipmap/ic_launcher_round"/>
-            <com.wpp.study.drawerlayout.PeriscopeView
-                android:id="@+id/periscope"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/gray"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -73,26 +74,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="菜单1" />
+                android:text="个人资料" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="right"
-            android:background="@color/colorPrimaryDark"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher_round" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="菜单1" />
-        </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
 </RelativeLayout>

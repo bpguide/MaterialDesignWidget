@@ -13,4 +13,10 @@
         <item name="colorControlHighlight">?attr/selectableItemBackground</item>
         <item name="colorButtonNormal">#993Af6</item>
     </style>
+
+    <style name="ActivityNoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

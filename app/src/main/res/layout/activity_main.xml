@@ -11,7 +11,7 @@
     >
 
     <Button
-        android:id="@+id/side"
+        android:id="@+id/side_bt"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:text="侧滑"
@@ -26,6 +26,7 @@
         android:layout_height="80dp"
         android:text="RecyclerView"
         android:textSize="18sp"
+        style="@style/rippleButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"/>
 

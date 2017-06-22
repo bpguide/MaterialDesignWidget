@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".recyclerview.RecyclerViewActivity"/>
+        <activity android:name=".side.SideActivity"
+            android:theme="@style/ActivityNoActionBar"/>
     </application>
 
 </manifest>
