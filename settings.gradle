@@ -1,1 +1,1 @@
-include ':app', ':drawerlayout', ':navigationlayout'
+include ':app'
