@@ -15,7 +15,7 @@
 
     <item
         android:id="@+id/action_camera"
-        android:title="帮助"
+        android:title="相机"
         android:orderInCategory="100"
         android:icon="@android:drawable/ic_menu_camera"/>
 </menu>

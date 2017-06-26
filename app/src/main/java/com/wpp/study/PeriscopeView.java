@@ -1,4 +1,4 @@
-package com.wpp.study.drawerlayout;
+package com.wpp.study;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

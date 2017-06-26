@@ -11,13 +11,12 @@
     >
 
     <Button
-        android:id="@+id/side_bt"
+        android:id="@+id/drawerlayout_bt"
         android:layout_width="130dp"
         android:layout_height="80dp"
-        android:text="侧滑"
+        android:text="DrawerLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:textColor="#fff"
         style="@style/rippleButton"
         android:textSize="18sp"/>
     <Button
@@ -29,5 +28,14 @@
         style="@style/rippleButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/navigation_bt"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="Navigation"
+        android:layout_below="@+id/drawerlayout_bt"
+        style="@style/rippleButton"
+        android:textSize="18sp"/>
 
 </RelativeLayout>

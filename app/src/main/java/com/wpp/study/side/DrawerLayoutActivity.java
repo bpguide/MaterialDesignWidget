@@ -13,7 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
-public class SideActivity extends AppCompatActivity {
+public class DrawerLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.drawerlayout)
     DrawerLayout drawerLayout;
@@ -24,7 +24,7 @@ public class SideActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_side);
+        setContentView(R.layout.activity_drawerlayout);
         bind = ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);

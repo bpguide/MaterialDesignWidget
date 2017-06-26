@@ -18,8 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".recyclerview.RecyclerViewActivity"/>
-        <activity android:name=".side.SideActivity"
+        <activity android:name=".side.DrawerLayoutActivity"
             android:theme="@style/ActivityNoActionBar"/>
+        <activity android:name=".side.NavigationActivity"/>
     </application>
 
 </manifest>
