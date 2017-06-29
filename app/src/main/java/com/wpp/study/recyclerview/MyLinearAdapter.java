@@ -11,13 +11,6 @@ import com.wpp.study.R;
 
 import java.util.ArrayList;
 
-
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/5/22
- */
 public class MyLinearAdapter extends RecyclerView.Adapter  {
     private Context context;
     private LayoutInflater mLayoutInflater;

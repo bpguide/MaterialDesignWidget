@@ -13,12 +13,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/5/22
- */
 public class MyGridAdapter extends RecyclerView.Adapter implements MyItemTouchHelpCallBack.IItemTouchMovedListener{
     private Context context;
     private LayoutInflater mLayoutInflater;

@@ -19,4 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Transition" parent="AppTheme">
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
 </resources>

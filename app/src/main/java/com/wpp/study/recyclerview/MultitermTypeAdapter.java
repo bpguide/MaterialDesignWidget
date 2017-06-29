@@ -13,12 +13,6 @@ import com.wpp.study.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/6/11
- */
 public class MultitermTypeAdapter extends RecyclerView.Adapter {
 
     private ArrayList<MultitermData> mDatas;

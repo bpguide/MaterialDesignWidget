@@ -8,17 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import com.wpp.study.recyclerview.RecyclerViewActivity;
 import com.wpp.study.side.DrawerLayoutActivity;
 import com.wpp.study.side.NavigationActivity;
+import com.wpp.study.transition.TransitionActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/6/19
- */
 public class MainActivity extends AppCompatActivity {
 
     private Unbinder bind;
@@ -46,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NavigationActivity.class);
         startActivity(intent);
     }
+
+    @OnClick(R.id.transition_bt)
+    public void startTransition(){
+        Intent intent = new Intent(this, TransitionActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

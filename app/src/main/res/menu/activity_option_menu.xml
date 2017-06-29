@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/makeCustomAnimation"
+        app:showAsAction="never"
+        android:title="makeCustomAnimation"/>
+    <item
+        android:id="@+id/makeScaleUpAnimation"
+        app:showAsAction="never"
+        android:title="makeScaleUpAnimation"/>
+    <item
+        android:id="@+id/makeClipRevealAnimation"
+        app:showAsAction="never"
+        android:title="makeClipRevealAnimation"/>
+    <item
+        android:id="@+id/makeSceneTransitionAnimation"
+        app:showAsAction="never"
+        android:title="makeSceneTransitionAnimation"/>
+    <item
+        android:id="@+id/makeThumbnailScaleUpAnimation"
+        app:showAsAction="never"
+        android:title="makeThumbnailScaleUpAnimation"/>
+
+</menu>

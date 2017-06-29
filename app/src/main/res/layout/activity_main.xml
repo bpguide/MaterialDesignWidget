@@ -38,4 +38,13 @@
         style="@style/rippleButton"
         android:textSize="18sp"/>
 
+    <Button
+        android:id="@+id/transition_bt"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="Transition"
+        android:layout_below="@+id/recyclerview_bt"
+        android:layout_alignParentRight="true"
+        style="@style/rippleButton"
+        android:textSize="18sp"/>
 </RelativeLayout>

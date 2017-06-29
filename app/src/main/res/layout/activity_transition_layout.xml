@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/activity_transition_layout_cover"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:transitionName="cover" />
+
+        <ImageView
+            android:id="@+id/activity_transition_layout_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/activity_transition_layout_cover"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:transitionName="play" />
+
+        <TextView
+            android:id="@+id/activity_transition_layout_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/activity_transition_layout_cover"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="当前方式："
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_transition_layout_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/activity_transition_layout_tip"
+            android:layout_below="@+id/activity_transition_layout_tip"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/activity_transition_layout_fade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fade"
+            android:layout_below="@+id/activity_transition_layout_way"
+            android:layout_alignStart="@+id/activity_transition_layout_way" />
+        <Button
+            android:id="@+id/activity_transition_layout_explode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="explode"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/activity_transition_layout_tip" />
+        <Button
+            android:id="@+id/activity_transition_layout_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slide"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/activity_transition_layout_explode" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

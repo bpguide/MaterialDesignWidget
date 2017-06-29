@@ -11,12 +11,6 @@ import android.view.View;
 
 import com.wpp.study.R;
 
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/5/22
- */
 public class DividerLinearViewItemDecoration extends RecyclerView.ItemDecoration {
 
     private Drawable mDivider;

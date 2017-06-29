@@ -21,6 +21,10 @@
         <activity android:name=".side.DrawerLayoutActivity"
             android:theme="@style/ActivityNoActionBar"/>
         <activity android:name=".side.NavigationActivity"/>
+        <activity android:name=".transition.TransitionActivity"
+            android:theme="@style/Transition"/>
+        <activity android:name=".transition.ActivityB"
+            android:theme="@style/Transition"/>
     </application>
 
 </manifest>

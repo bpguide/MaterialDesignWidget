@@ -6,12 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 
-/**
- * Created by wpp.
- *
- * @description
- * @date 2017/5/22
- */
 public class MyItemTouchHelpCallBack extends ItemTouchHelper.Callback {
 
     private String TAG = "wpp";
