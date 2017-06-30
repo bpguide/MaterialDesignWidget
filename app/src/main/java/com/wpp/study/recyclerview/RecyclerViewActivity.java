@@ -145,7 +145,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.recyclerview_menu, menu);
+        getMenuInflater().inflate(R.menu.activity_recyclerview_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

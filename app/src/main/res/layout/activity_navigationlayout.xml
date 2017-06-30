@@ -53,7 +53,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="left"
         app:headerLayout="@layout/navigation_head_layout"
-        app:menu="@menu/navigation_menu">
+        app:menu="@menu/activity_navigation_menu">
 
     </android.support.design.widget.NavigationView>
 
