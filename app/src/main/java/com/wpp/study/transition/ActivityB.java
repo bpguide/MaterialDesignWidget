@@ -26,7 +26,7 @@ public class ActivityB extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Slide slide = new Slide();
         getWindow().setEnterTransition(slide);
-        setContentView(R.layout.activity_item2_layout);
+        setContentView(R.layout.activity_b_layout);
         unbind = ButterKnife.bind(this);
 
         Intent intent = getIntent();

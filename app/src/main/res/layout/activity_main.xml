@@ -47,4 +47,13 @@
         android:layout_alignParentRight="true"
         style="@style/rippleButton"
         android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/toolbar_bt"
+        style="@style/rippleButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/navigation_bt"
+        android:text="ToolBar"
+        android:textSize="18sp" />
 </RelativeLayout>
