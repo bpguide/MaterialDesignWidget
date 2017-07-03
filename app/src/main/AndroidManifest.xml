@@ -29,6 +29,8 @@
             android:theme="@style/ActivityNoActionBar"/>
         <activity android:name=".palette.PaletteActivity"
             android:theme="@style/Transition"/>
+        <activity android:name=".cardview_floatingbutton.CardViewActivity"
+            android:theme="@style/Transition"/>
     </application>
 
 </manifest>

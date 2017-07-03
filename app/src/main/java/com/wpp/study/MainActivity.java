@@ -9,6 +9,7 @@ import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
 
+import com.wpp.study.cardview_floatingbutton.CardViewActivity;
 import com.wpp.study.palette.PaletteActivity;
 import com.wpp.study.recyclerview.RecyclerViewActivity;
 import com.wpp.study.side.DrawerLayoutActivity;
@@ -68,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.palette)
     public void startPalette(){
         Intent intent = new Intent(this, PaletteActivity.class);
+        getWindow().setExitTransition(new Fade());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    @OnClick(R.id.cardview_bt)
+    public void startCardView(){
+        Intent intent = new Intent(this, CardViewActivity.class);
         getWindow().setExitTransition(new Fade());
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }

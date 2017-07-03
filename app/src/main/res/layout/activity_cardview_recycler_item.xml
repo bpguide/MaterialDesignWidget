@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:stateListAnimator="@drawable/translation_z"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false">
+
+    <ImageView
+        android:id="@+id/activity_cardview_recycler_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/activity_cardview_recycler_item_head_iv"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/activity_cardview_recycler_item_name_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="姓名："
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/activity_cardview_recycler_item_head_iv"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/activity_cardview_recycler_item_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="张三"
+            android:layout_alignBaseline="@+id/activity_cardview_recycler_item_name_tip_tv"
+            android:layout_alignBottom="@+id/activity_cardview_recycler_item_name_tip_tv"
+            android:layout_toRightOf="@+id/activity_cardview_recycler_item_name_tip_tv" />
+
+        <TextView
+            android:id="@+id/activity_cardview_recycler_item_sex_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="性别："
+            android:layout_below="@+id/activity_cardview_recycler_item_name_tip_tv"
+            android:layout_alignStart="@+id/activity_cardview_recycler_item_name_tip_tv"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/activity_cardview_recycler_item_sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="男"
+            android:layout_alignBaseline="@+id/activity_cardview_recycler_item_sex_tip_tv"
+            android:layout_alignBottom="@+id/activity_cardview_recycler_item_sex_tip_tv"
+            android:layout_toEndOf="@+id/activity_cardview_recycler_item_sex_tip_tv" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
