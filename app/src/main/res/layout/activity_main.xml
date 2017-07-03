@@ -56,4 +56,14 @@
         android:layout_below="@+id/navigation_bt"
         android:text="ToolBar"
         android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/palette"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="Palette"
+        android:layout_below="@+id/transition_bt"
+        android:layout_alignParentRight="true"
+        style="@style/rippleButton"
+        android:textSize="18sp"/>
 </RelativeLayout>

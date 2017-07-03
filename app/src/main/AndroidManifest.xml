@@ -27,6 +27,8 @@
             android:theme="@style/Transition"/>
         <activity android:name=".toolbar.ToolBarActivity"
             android:theme="@style/ActivityNoActionBar"/>
+        <activity android:name=".palette.PaletteActivity"
+            android:theme="@style/Transition"/>
     </application>
 
 </manifest>

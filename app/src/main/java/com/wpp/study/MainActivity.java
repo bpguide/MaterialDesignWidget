@@ -9,6 +9,7 @@ import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
 
+import com.wpp.study.palette.PaletteActivity;
 import com.wpp.study.recyclerview.RecyclerViewActivity;
 import com.wpp.study.side.DrawerLayoutActivity;
 import com.wpp.study.side.NavigationActivity;
@@ -60,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.toolbar_bt)
     public void startToolBar(){
         Intent intent = new Intent(this, ToolBarActivity.class);
+        getWindow().setExitTransition(new Fade());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    @OnClick(R.id.palette)
+    public void startPalette(){
+        Intent intent = new Intent(this, PaletteActivity.class);
         getWindow().setExitTransition(new Fade());
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
