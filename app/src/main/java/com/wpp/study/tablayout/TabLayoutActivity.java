@@ -22,7 +22,7 @@ public class TabLayoutActivity extends AppCompatActivity {
     @BindView(R.id.activity_tablayout_layout_viewpager)
     ViewPager mViewPager;
 
-    private String[] mTitles = {"头条","本地"};//,"娱乐","体育","财经","科技","推荐"
+    private String[] mTitles = {"头条","本地","娱乐","体育","财经","科技","推荐"};//
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 
         mViewPager.setAdapter(new MyViewPagerAdapter(getSupportFragmentManager()));
         mTabLayout.setupWithViewPager(mViewPager);
+//        mTabLayout.addTab(mTabLayout.newTab().setText("").setIcon(R.mipmap.ic_launcher_round));
 
     }
 
