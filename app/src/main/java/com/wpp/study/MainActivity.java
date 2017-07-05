@@ -14,6 +14,7 @@ import com.wpp.study.palette.PaletteActivity;
 import com.wpp.study.recyclerview.RecyclerViewActivity;
 import com.wpp.study.side.DrawerLayoutActivity;
 import com.wpp.study.side.NavigationActivity;
+import com.wpp.study.tablayout.TabLayoutActivity;
 import com.wpp.study.toolbar.ToolBarActivity;
 import com.wpp.study.transition.TransitionActivity;
 
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
 
-    @OnClick(R.id.palette)
+    @OnClick(R.id.palette_bt)
     public void startPalette(){
         Intent intent = new Intent(this, PaletteActivity.class);
         getWindow().setExitTransition(new Fade());
@@ -79,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setExitTransition(new Fade());
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
+
+    @OnClick(R.id.tablayout_bt)
+    public void startTabLayout(){
+        Intent intent = new Intent(this, TabLayoutActivity.class);
+        getWindow().setExitTransition(new Fade());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

@@ -58,7 +58,7 @@
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/palette"
+        android:id="@+id/palette_bt"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:text="Palette"
@@ -75,4 +75,14 @@
         android:layout_below="@+id/toolbar_bt"
         android:text="cardview"
         android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tablayout_bt"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="TabLayout"
+        android:layout_below="@+id/palette_bt"
+        android:layout_alignParentRight="true"
+        style="@style/rippleButton"
+        android:textSize="18sp"/>
 </RelativeLayout>

@@ -31,6 +31,8 @@
             android:theme="@style/Transition"/>
         <activity android:name=".cardview_floatingbutton.CardViewActivity"
             android:theme="@style/Transition"/>
+        <activity android:name=".tablayout.TabLayoutActivity"
+            android:theme="@style/Transition"/>
     </application>
 
 </manifest>
