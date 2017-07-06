@@ -85,4 +85,14 @@
         android:layout_alignParentRight="true"
         style="@style/rippleButton"
         android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/vector_bt"
+        style="@style/rippleButton"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cardview_bt"
+        android:text="Vector"
+        android:textSize="18sp" />
+
 </RelativeLayout>

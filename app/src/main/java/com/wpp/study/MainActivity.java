@@ -17,6 +17,7 @@ import com.wpp.study.side.NavigationActivity;
 import com.wpp.study.tablayout.TabLayoutActivity;
 import com.wpp.study.toolbar.ToolBarActivity;
 import com.wpp.study.transition.TransitionActivity;
+import com.wpp.study.vector.VectorActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -88,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
 
+    @OnClick(R.id.vector_bt)
+    public void startVector(){
+        Intent intent = new Intent(this, VectorActivity.class);
+        getWindow().setExitTransition(new Fade());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();

@@ -33,6 +33,8 @@
             android:theme="@style/Transition"/>
         <activity android:name=".tablayout.TabLayoutActivity"
             android:theme="@style/Transition"/>
+        <activity android:name=".vector.VectorActivity"
+            android:theme="@style/Transition"/>
     </application>
 
 </manifest>
