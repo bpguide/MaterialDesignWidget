@@ -35,6 +35,13 @@
             android:theme="@style/Transition"/>
         <activity android:name=".vector.VectorActivity"
             android:theme="@style/Transition"/>
+        <!--<activity android:name=".TestActivity">-->
+
+        <!--</activity>-->
+
+        <activity android:name=".view.ViewActivity">
+
+        </activity>
     </application>
 
 </manifest>

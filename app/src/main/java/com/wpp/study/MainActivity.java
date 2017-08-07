@@ -18,6 +18,7 @@ import com.wpp.study.tablayout.TabLayoutActivity;
 import com.wpp.study.toolbar.ToolBarActivity;
 import com.wpp.study.transition.TransitionActivity;
 import com.wpp.study.vector.VectorActivity;
+import com.wpp.study.view.ViewActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -26,11 +27,13 @@ import butterknife.Unbinder;
 public class MainActivity extends AppCompatActivity {
 
     private Unbinder bind;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bind = ButterKnife.bind(this);
+
     }
 
     @OnClick(R.id.recyclerview_bt)
@@ -95,9 +98,17 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setExitTransition(new Fade());
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
+
+    @OnClick(R.id.custom_view_bt)
+    public void starCustom(){
+        Intent intent = new Intent(this, ViewActivity.class);
+        getWindow().setExitTransition(new Slide());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();
         bind.unbind();
     }
+
 }

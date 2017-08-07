@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wpp.study.view.DrawTextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <Button
+        android:id="@+id/activity_view_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.wpp.study.view.CustomProgressBar
+            android:id="@+id/activity_view_customProgress1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:max="100"
+            app:roundColor="#00f"
+            app:roundProgressColor="#f00"
+            app:roundWidth="1dp"
+            app:style="FIll"
+            app:textColor="#0f0"
+            app:textSize="16sp"
+            />
+
+        <com.wpp.study.view.CustomProgressBar
+            android:id="@+id/activity_view_customProgress2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            app:max="100"
+            app:roundColor="#eee"
+            app:roundProgressColor="#f00"
+            app:roundWidth="10dp"
+            app:style="STROKE"
+            app:textColor="#0f0"
+            app:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
