@@ -1,108 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.wpp.study.recyclerview.RecyclerViewActivity"
-    android:paddingLeft="20dp"
-    android:paddingTop="20dp"
-    android:paddingRight="20dp"
-    >
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
 
-    <Button
-        android:id="@+id/drawerlayout_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="DrawerLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
-    <Button
-        android:id="@+id/recyclerview_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="RecyclerView"
-        android:textSize="18sp"
-        style="@style/rippleButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"/>
+        <com.wpp.study.view.LinearGradientTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="非常规程序猿"
+            android:textSize="28sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="#000"/>
+        <Button
+            android:id="@+id/drawerlayout_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="DrawerLayout"
+            style="@style/rippleButton"
+            android:textSize="18sp"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <Button
+            android:id="@+id/recyclerview_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="RecyclerView"
+            android:textSize="18sp"
+            style="@style/rippleButton"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
 
-    <Button
-        android:id="@+id/navigation_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="Navigation"
-        android:layout_below="@+id/drawerlayout_bt"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
+        <Button
+            android:id="@+id/navigation_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="Navigation"
+            android:layout_below="@+id/drawerlayout_bt"
+            style="@style/rippleButton"
+            android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/transition_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="Transition"
-        android:layout_below="@+id/recyclerview_bt"
-        android:layout_alignParentRight="true"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
+        <Button
+            android:id="@+id/transition_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="Transition"
+            android:layout_below="@+id/recyclerview_bt"
+            android:layout_alignParentRight="true"
+            style="@style/rippleButton"
+            android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/toolbar_bt"
-        style="@style/rippleButton"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/navigation_bt"
-        android:text="ToolBar"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/toolbar_bt"
+            style="@style/rippleButton"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/navigation_bt"
+            android:text="ToolBar"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/palette_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="Palette"
-        android:layout_below="@+id/transition_bt"
-        android:layout_alignParentRight="true"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
+        <Button
+            android:id="@+id/palette_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="Palette"
+            android:layout_below="@+id/transition_bt"
+            android:layout_alignParentRight="true"
+            style="@style/rippleButton"
+            android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/cardview_bt"
-        style="@style/rippleButton"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/toolbar_bt"
-        android:text="cardview"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/cardview_bt"
+            style="@style/rippleButton"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/toolbar_bt"
+            android:text="cardview"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/tablayout_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="TabLayout"
-        android:layout_below="@+id/palette_bt"
-        android:layout_alignParentRight="true"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
+        <Button
+            android:id="@+id/tablayout_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="TabLayout"
+            android:layout_below="@+id/palette_bt"
+            android:layout_alignParentRight="true"
+            style="@style/rippleButton"
+            android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/vector_bt"
-        style="@style/rippleButton"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/cardview_bt"
-        android:text="Vector"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/vector_bt"
+            style="@style/rippleButton"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/cardview_bt"
+            android:text="Vector"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/custom_view_bt"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:text="CustomView"
-        android:layout_below="@+id/tablayout_bt"
-        android:layout_alignParentRight="true"
-        style="@style/rippleButton"
-        android:textSize="18sp"/>
-</RelativeLayout>
+        <Button
+            android:id="@+id/custom_view_bt"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:text="CustomView"
+            android:layout_below="@+id/tablayout_bt"
+            android:layout_alignParentRight="true"
+            style="@style/rippleButton"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</ScrollView>
+
