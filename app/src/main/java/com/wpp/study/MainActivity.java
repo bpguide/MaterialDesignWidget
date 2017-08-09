@@ -18,6 +18,7 @@ import com.wpp.study.tablayout.TabLayoutActivity;
 import com.wpp.study.toolbar.ToolBarActivity;
 import com.wpp.study.transition.TransitionActivity;
 import com.wpp.study.vector.VectorActivity;
+import com.wpp.study.view.ColorMatrixActivity;
 import com.wpp.study.view.ViewActivity;
 
 import butterknife.ButterKnife;
@@ -103,6 +104,13 @@ public class MainActivity extends AppCompatActivity {
     public void starCustom(){
         Intent intent = new Intent(this, ViewActivity.class);
         getWindow().setExitTransition(new Slide());
+        startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
+    }
+
+    @OnClick(R.id.colormatrix_bt)
+    public void sartColorMatrix(){
+        Intent intent = new Intent(this, ColorMatrixActivity.class);
+        getWindow().setExitTransition(new Fade());
         startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
     @Override

@@ -118,6 +118,15 @@
             android:layout_alignParentRight="true"
             style="@style/rippleButton"
             android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/colormatrix_bt"
+            style="@style/rippleButton"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/vector_bt"
+            android:text="滤镜"
+            android:textSize="18sp" />
     </RelativeLayout>
 </ScrollView>
 
