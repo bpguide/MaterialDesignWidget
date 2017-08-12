@@ -19,6 +19,9 @@ public class ViewActivity extends Activity {
 
     @BindView(R.id.activity_view_customProgress2)
     CustomProgressBar mCustomProgressBar2;
+
+    @BindView(R.id.activity_view_wave)
+    WaveView mWaveView;
     private int progress = 0;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,5 +50,6 @@ public class ViewActivity extends Activity {
                 }
             }
         }).start();
+        mWaveView.startAnimation();
     }
 }
