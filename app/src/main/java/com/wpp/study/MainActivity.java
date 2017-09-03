@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
+import android.widget.Toast;
 
 import com.wpp.study.cardview_floatingbutton.CardViewActivity;
 import com.wpp.study.palette.PaletteActivity;
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bind = ButterKnife.bind(this);
-
+        JNITest jniTest = new JNITest();
+        Toast.makeText(this, jniTest.getText(), Toast.LENGTH_SHORT).show();
     }
 
     @OnClick(R.id.recyclerview_bt)

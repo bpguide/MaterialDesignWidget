@@ -92,6 +92,12 @@ public class PaletteActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 设置色值的透明度
+     * @param percent
+     * @param rgb
+     * @return
+     */
     private int setAlphaWithRGB(float percent, int rgb){
         int blue = rgb & 0xFF;
         int green = rgb >> 8 & 0Xff;

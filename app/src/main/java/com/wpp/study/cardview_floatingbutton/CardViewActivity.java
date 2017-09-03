@@ -26,6 +26,10 @@ public class CardViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cardview_layout);
         unbinder = ButterKnife.bind(this);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setAdapter(new CardViewAdapter(this, getData()));
+    }
+
+    private ArrayList<MyData> getData(){
         ArrayList<MyData> datas = new ArrayList<>();
 
         MyData data = new MyData();
@@ -76,9 +80,9 @@ public class CardViewActivity extends AppCompatActivity {
         data.bg_url = "http://img-cdn.hopetrip.com.hk/news4/8D31BD2C254E614B/9/91E48C726DB931250FB1.jpg";
         data.head_url = "http://img.qq1234.org/uploads/allimg/140701/3_140701150032_13.jpg";
         datas.add(data);
-        mRecyclerView.setAdapter(new CardViewAdapter(this, datas));
-    }
 
+        return datas;
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();
